@@ -5,7 +5,6 @@ samples <- c("PpCAa", "PpCAb", "PpCAc", "PpSgGDa", "PpSgGDb", "PpSgGDc","PpSgPDa
 condictions <- c(rep_len("PpCA", 3), rep_len("PpSgGD", 3),rep_len("PpSgPD", 3))
 designM <- data.frame(sampleID=samples, condition=condictions)
 designM
-
 switchList <- importRdata(isoformCountMatrix=salmonQuant$counts, 
                           isoformRepExpression=salmonQuant$abundance, 
                           designMatrix=designM, 
